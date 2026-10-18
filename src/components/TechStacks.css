@@ -1,0 +1,22 @@
+.tech-stacks {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.tech-stacks-glow {
+  position: absolute;
+  inset: -0.5rem;
+  background: linear-gradient(
+    to top right,
+    rgba(99, 102, 241, 0.1),
+    rgba(168, 85, 247, 0.1),
+    rgba(14, 165, 233, 0.05)
+  );
+  border-radius: 1.5rem;
+  filter: blur(40px);
+  opacity: 0.7;
+  pointer-events: none;
+}

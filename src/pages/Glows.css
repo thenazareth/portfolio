@@ -1,0 +1,45 @@
+.glows-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 9999px;
+  z-index: 0;
+}
+
+/* Indigo — topo */
+.glow-top {
+  top: -10rem;                    /* -160px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 550px;
+  background-color: rgba(99, 102, 241, 0.1);
+  filter: blur(140px);
+}
+
+/* Purple — meio esquerda */
+.glow-middle-left {
+  top: 1400px;
+  left: -16rem;                   /* -256px */
+  width: 600px;
+  height: 600px;
+  background-color: rgba(168, 85, 247, 0.1);
+  filter: blur(160px);
+}
+
+/* Sky — inferior direita */
+.glow-bottom-right {
+  top: 1920px;
+  right: -12rem;                  /* -192px */
+  width: 650px;
+  height: 650px;
+  background-color: rgba(14, 165, 233, 0.1);
+  filter: blur(150px);
+}

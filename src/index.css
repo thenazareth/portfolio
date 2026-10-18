@@ -1,0 +1,29 @@
+/* ===== Reset básico ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Body global ===== */
+body {
+  background-color: #f8fafc;                  /* bg-[#f8fafc] */
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1rem;                            /* text-body-md (ajusta) */
+  color: #1e293b;                             /* text-on-surface (ajusta pra tua cor real) */
+  -webkit-font-smoothing: antialiased;        /* antialiased */
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;                          /* min-h-screen */
+}
+
+/* ===== Seleção de texto ===== */
+::selection {
+  background-color: #e0e7ff;                  /* selection:bg-indigo-100 */
+  color: #4f46e5;                             /* selection:text-primary */
+}

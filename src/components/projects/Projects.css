@@ -1,0 +1,51 @@
+.projects {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .projects {
+    padding: 4rem 3rem;
+  }
+}
+
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .projects-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.projects-eyebrow {
+  font-family: 'Code', monospace;
+  font-size: 0.875rem;
+  color: #4f46e5;             
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.projects-title {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0.25rem 0 0;
+}
+
+.projects-subtitle {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 1rem;
+  color: #475569;
+  margin: 0.25rem 0 0;
+}

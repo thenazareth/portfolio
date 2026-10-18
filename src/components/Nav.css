@@ -1,0 +1,33 @@
+.nav {
+  display: none;                         
+  align-items: center;
+  gap: 0.25rem;                        
+}
+
+@media (min-width: 1280px) {             
+  .nav {
+    display: flex;
+  }
+}
+
+/* Links */
+.nav-link {
+  padding: 0.5rem 0.75rem;              
+  border-radius: 0.5rem;                
+  color: #475569;                       
+  text-decoration: none;
+  font-family: 'Body', system-ui, sans-serif;  
+  font-size: 0.875rem;                  
+  font-weight: 500;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: #0f172a;                      
+  background-color: #f1f5f9;            
+}
+.nav-link[data-active="true"] {
+  background-color: #f1f5f9;             
+  color: #4f46e5;                        
+  font-weight: 600;
+}

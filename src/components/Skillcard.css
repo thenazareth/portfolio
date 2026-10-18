@@ -1,0 +1,147 @@
+/*  Card base */
+.skill-card {
+  position: relative;
+  width: 100%;
+  border-radius: 1rem;           /* rounded-2xl */
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);   /* backdrop-blur-xl */
+  -webkit-backdrop-filter: blur(24px);
+  padding: 1.5rem;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.skill-card--indigo:hover {
+  border-color: #a5b4fc;        
+}
+
+.skill-card--sky:hover {
+  border-color: #7dd3fc;       
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 0.75rem;
+}
+
+.skill-card-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+/* Ícone  */
+.skill-card-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card--indigo .skill-card-icon {
+  background-color: #eef2ff;     
+  border: 1px solid #e0e7ff;    
+  color: #4f46e5;                
+}
+
+.skill-card--sky .skill-card-icon {
+  background-color: #f0f9ff;   
+  border: 1px solid #e0f2fe;    
+  color: #0284c7;               
+}
+
+.skill-card-icon-symbol {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.skill-card-title {
+  font-family: 'Code', monospace;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #0f172a;               
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.skill-card-subtitle {
+  font-family: 'Code', monospace;
+  font-size: 11px;
+  color: #64748b;              
+}
+
+/* ===== Badge ===== */
+.skill-card-badge {
+  padding: 0.125rem 0.625rem;
+  border-radius: 9999px;
+  font-family: 'Code', monospace;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.skill-card--indigo .skill-card-badge {
+  background-color: #eef2ff;
+  color: #4338ca;               
+  border: 1px solid #c7d2fe;    
+}
+
+.skill-card--sky .skill-card-badge {
+  background-color: #f0f9ff;
+  color: #0369a1;                
+  border: 1px solid #bae6fd;    
+}
+
+
+.skill-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.skill-block--divider {
+  padding-top: 0.25rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.skill-block-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Code', monospace;
+  font-size: 11px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.skill-block-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* dot */
+.skill-dot {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
+.skill-dot--indigo { background-color: #4f46e5; }
+.skill-dot--purple { background-color: #9333ea; }
+.skill-dot--sky    { background-color: #0ea5e9; }

@@ -1,0 +1,76 @@
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 3rem 3rem 4rem;
+  }
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;  
+  gap: 3rem;
+  align-items: top;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 2rem;                 
+  }
+}
+
+/* Coluna esquerda */
+.hero-col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .hero-col-left {
+    grid-column: span 6 / span 6; 
+  }
+}
+
+/* Título  */
+.hero-title {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 56px;            
+  font-weight: 800;
+  letter-spacing: -0.025em;     
+  line-height: 64px;
+  color: #0f172a;              
+  margin: 0;
+}
+
+/* Subtítulo */
+.hero-subtitle {
+  font-family: 'Body', system-ui, sans-serif;
+  font-size: 1.125rem;       
+  color: #475569;                
+  max-width: 42rem;              
+  line-height: 1.625;            
+}
+
+.hero-subtitle p {
+  margin: 0;
+}
+
+/* Coluna esquerda  */
+@media (min-width: 1024px) {
+  .hero-col-left {
+    grid-column: span 6 / span 6;
+  }
+
+  .hero-col-right {
+    grid-column: span 6 / span 6;
+  }
+}
