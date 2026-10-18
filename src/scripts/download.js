@@ -1,6 +1,6 @@
   function baixarPDF() {
     const link = document.createElement('a');
-    link.href = "./downloads/resume_vitoriaNazareth.pdf";
+    link.href = "/resume_vitoriaNazareth.pdf";
     link.download = "Vitoria_Nazareth_Curriculo.pdf";
     link.click();
   }
