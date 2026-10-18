@@ -10,7 +10,7 @@ const PROJECTS = [
     description:
       'AI platform that provides personalized learning experiences based on the socratic method.',
     tags: ['Python', 'FlutterFlow', 'SQL'],
-    demoUrl: 'https://sokrates.com.br/',  
+    demoUrl: 'https://rnpmais.rnp.br/lab/sokrates',  
     githubUrl: '',
   },
   {
